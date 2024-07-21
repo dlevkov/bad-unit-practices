@@ -13,4 +13,8 @@ describe('Service2Service', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it('should be created', () => {
+    expect(new Service2Service()).toBeTruthy();
+  });
 });
