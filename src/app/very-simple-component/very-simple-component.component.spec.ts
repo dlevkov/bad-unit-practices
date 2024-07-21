@@ -42,4 +42,26 @@ describe('VerySimpleComponentComponent', () => {
     })
 
   });
+  it('should create', (done) => {
+    expect.hasAssertions();
+    const httpSrv = component['httpClient'];
+    const spy = jest.spyOn(httpSrv, 'get').mockReturnValue(of({ value: 'Hello world' }));
+    fixture.detectChanges();
+    fixture.whenStable().then(() => {
+      expect(spy).toHaveBeenCalled();
+      done()
+    })
+
+  });
+  describe('This', () => {
+    describe('is', () => {
+      describe('very', () => {
+        describe('structured', () => {
+          it('test', () => {
+
+          });
+        });
+      });
+    });
+  });
 });
