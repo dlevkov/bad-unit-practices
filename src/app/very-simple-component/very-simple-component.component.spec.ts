@@ -27,10 +27,10 @@ describe('VerySimpleComponentComponent', () => {
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(component).toBeTruthy(); // This is a very simple test
   });
   it('should create', () => {
-    expect(component.text).toBe('Hello world');
+    expect(component.text).toBe('Hello world'); //this tests if the text is 'Hello world'
   });
   it('should create', () => {
     // expect.hasAssertions();
@@ -56,9 +56,17 @@ describe('VerySimpleComponentComponent', () => {
   describe('This', () => {
     describe('is', () => {
       describe('very', () => {
-        describe('structured', () => {
-          it('test', () => {
+        describe('very', () => {
+          describe('very', () => {
+            describe('very', () => {
+              describe('very', () => {
+                describe('structured', () => {
+                  it('test', () => {
 
+                  });
+                });
+              });
+            });
           });
         });
       });
